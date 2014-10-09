@@ -17,9 +17,17 @@ public class Kata2 {
             }
             
         }
+        
+        int mostRepeated = 0;
+        int valueCompare = 0;
         for (Integer key : map.keySet()) {
-                System.out.println(key + "->" + map.get(key));
+            if (map.get(key) > valueCompare){
+                valueCompare = map.get(key);
+                mostRepeated = key; 
             }
+                System.out.println(key + "->" + map.get(key));
+        }
+        System.out.println("Most Repeated:"mostRepeated);
     }
     
     
