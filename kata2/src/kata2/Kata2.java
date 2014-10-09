@@ -16,10 +16,10 @@ public class Kata2 {
                 map.put(vec[i], 1);
             }
             
-            for (Integer key : map.keySet()) {
-                System.out.println(map.get(key));
-            }
         }
+        for (Integer key : map.keySet()) {
+                System.out.println(key + "->" + map.get(key));
+            }
     }
     
     
