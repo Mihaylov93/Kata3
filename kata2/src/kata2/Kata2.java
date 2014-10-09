@@ -27,7 +27,7 @@ public class Kata2 {
             }
                 System.out.println(key + "->" + map.get(key));
         }
-        System.out.println("Most Repeated:"mostRepeated);
+        System.out.println("Most Repeated:" + mostRepeated);
     }
     
     
