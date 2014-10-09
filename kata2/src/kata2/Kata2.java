@@ -10,15 +10,14 @@ public class Kata2 {
         
         for (int i = 0; i < vec.length; i++) {
             Integer frec = map.get(vec[i]);
-            System.out.println(map.get(vec[i]));
             if(frec != null) {
                 map.put(vec[i], frec+1 );
             }else{
                 map.put(vec[i], 1);
             }
             
-            for (Integer key : vec) {
-                
+            for (Integer key : map.keySet()) {
+                System.out.println(map.get(key));
             }
         }
     }
